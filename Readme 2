@@ -1,0 +1,5 @@
+Hi again,
+Yesterday I wrote the test automation script in PyCharm IDE to automate the new user account registration, which I have added to this GitHub folder
+However, I have not automated all the webelements in the 'Recap' page as I do not have a valid creditc card from a German bank
+You may run this code in PyCharm IDE by changing the path of the Google Chrome browser driver.
+Thank you.
