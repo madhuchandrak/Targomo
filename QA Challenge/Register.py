@@ -39,15 +39,15 @@ driver.find_element_by_id("mat-input-6").send_keys("Targomo GmbH, Berlin, German
 driver.find_element_by_id("mat-input-7").send_keys("https//www.targomo.com")
 driver.find_element_by_xpath("//*[@id='cdk-step-content-0-2']/form/div[2]/button[2]/span").click() # Next button
 
-
 # Recap page
-# Card Number
-# MM
-# YY
-# CVC
+driver.switch_to.frame("__privateStripeFrame5")
+driver.find_element_by_xpath('//*[@id="root"]/form/div/div[2]/span[1]/span[2]/span/input').send_keys("5546370226859020") # Card Number
+driver.find_element_by_xpath('//*[@id="root"]/form/div/div[2]/span[2]/span/span/input').send_keys("0420")# MM and YY
+driver.find_element_by_xpath('//*[@id="root"]/form/div/div[2]/span[3]/span/span/input').send_keys("000")# CVC
+driver.switch_to.default_content()
 driver.find_element_by_id("mat-input-14").send_keys("Madhu Chandra") # Cardholder Name
 driver.find_element_by_xpath("//*[@id='mat-checkbox-1']/label/div").click() # Checkbox - Keep me informed of what is new and improved.
 driver.find_element_by_xpath("//*[@id='mat-checkbox-2']/label/div").click() # Checkbox - I have read and accept the terms of use and privacy policy.
-driver.find_element_by_xpath("//*[@id='cdk-step-content-0-3']/form/div[2]/button/span").click() # Submit Registration
+# driver.find_element_by_xpath("//*[@id='cdk-step-content-0-3']/form/div[2]/button/span").click() # Submit Registration
 
 print("New user account registration is successful")
